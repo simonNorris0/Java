@@ -1,15 +1,14 @@
 # Package Hierarchy and Documentation
+Missing domain specifier (.net, .com, etc... (I want .net))
 
-** Missing domain specifier (.net, .com, etc... (I want .net))
-
-** daemonworks.util **
+## daemonworks.util
 General utility programs and methods
 
-** daemonworks.math **
+## daemonworks.math
 Mathematics programs and utility methods
 
-** daemonworks.numbers **
+## daemonworks.numbers
 Number theory programs and utility methods
 
-** daemonworks.statistics **
+## daemonworks.statistics
 Statistics pograms and utility methods
