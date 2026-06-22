@@ -1,4 +1,9 @@
-/**
+package daemonworks.math;
+/** 
+ *  @author Simon Norris
+ *  @author SimonNorris0
+ *  TO-DO:
+ *    * Documentation!
  *
  */
 public class UnitCircle {

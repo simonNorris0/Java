@@ -1,3 +1,5 @@
+package daemonworks.statistics;
+
 import java.util.Random;
 import java.util.Map.Entry;
 import java.util.Map;
@@ -7,6 +9,9 @@ import java.util.List;
 import java.util.ArrayList;
 /** How well distributed are samples produced by 
  *  java.util.Random.nextInt()?
+ *
+ *  @author Simon Norris
+ *  @author simonNorris0
  *
  *  Based on the output data, there is no single number that tends to 
  *  appear more than any one other. This experiment successfully shows  

@@ -1,4 +1,4 @@
-package net.daemonworks.util;
+package daemonworks.util;
 
 /**  Methods to create integer sequences
  */

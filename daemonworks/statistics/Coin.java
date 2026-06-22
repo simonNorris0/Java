@@ -1,7 +1,14 @@
-import java.util.Random;
+package daemonworks.statistics;
 
+import java.util.Random;
 /**
- * A simple program that simulates coin-flipping
+ * A simple program that simulates coin-flipping.
+ * @author Simon Norris
+ * @author simonNorris0
+ *
+ * TO-DO:
+ *   * Documentation!
+ *
  */
 public class Coin {
   /**

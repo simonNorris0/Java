@@ -1,6 +1,6 @@
-/**
- *
- */
+import daemonworks.statistics.coin;
+
+/** Simple test program for Coin.java */
 public class CoinTest {
   private static final int TESTCOUNT = 1000000;
 

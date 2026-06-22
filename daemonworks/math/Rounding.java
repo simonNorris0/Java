@@ -1,4 +1,4 @@
-package net.daemonworks.util;
+package daemonworks.math;
 /** Methods to round numbers mathematically */
 public class Rounding {
    /** Rounds the input to n decimal places.

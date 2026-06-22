@@ -1,4 +1,4 @@
-package net.daemonworks.util;
+package daemonworks.util;
 
 /** Print methods that can be used without qualifiers.
  */
