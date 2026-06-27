@@ -1,3 +1,5 @@
+package daemonworks.cryptography;
+
 import java.io.File;
 public interface Cipher {
    /** Takes an input plaintext String and returns 

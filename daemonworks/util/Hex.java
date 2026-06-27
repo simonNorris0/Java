@@ -1,3 +1,5 @@
+package daemonworks.util;
+
 import java.util.Formatter;
 import java.io.File;
 /** Often you want to look at the bytes inside a binary file using hex format.

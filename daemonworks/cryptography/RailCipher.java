@@ -1,3 +1,5 @@
+package daemonworks.cryptography;
+
 /** To-do: - Generalize decryption to work with more than 2 rails.
  *         - Proper documentation
  */

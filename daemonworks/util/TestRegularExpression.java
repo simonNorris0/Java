@@ -1,3 +1,7 @@
+package daemonworks.util;
+
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 /** Can be used to test regular expressions against an input String. 
  *  The first command-line argument is the input string to match against, 
  *  followed by one or more regular expressions to be applied to the input. 

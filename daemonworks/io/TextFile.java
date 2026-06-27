@@ -2,6 +2,6 @@ package daemonworks.io;
 /**
  *
  */
-public class BinaryFile {
+public class TextFile {
 
 }
