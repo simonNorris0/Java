@@ -2,6 +2,10 @@ package daemonworks.cryptography;
 
 /** To-do: - Generalize decryption to work with more than 2 rails.
  *         - Proper documentation
+ *         - Unit tests: I think even the specific 2 rail solution 
+ *                       only works with even plaintext input.. I suspect
+ *                       this is due to truncation - perhaps my rounding 
+ *                       utilities need to come into play here.
  */
 public class RailCipher extends TranspositionCipher {
    private StringBuilder[] rails;
@@ -74,7 +78,7 @@ public class RailCipher extends TranspositionCipher {
    /** test */
    public static void main(String[] args) {
       RailCipher c = new RailCipher(2);
-      String plaintext = "Move the tropps into place tonight - Attack at dawn";
+      String plaintext = "Prepare the troops tonight. Attack at Dawn!";
       String ciphertext = c.encrypt(plaintext);
       System.out.println(ciphertext);
       System.out.println(c.decrypt(ciphertext));
