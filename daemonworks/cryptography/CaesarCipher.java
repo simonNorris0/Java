@@ -14,19 +14,18 @@ public class CaesarCipher {
     *  @param String plaintext    The plaintext to encrypt.
     *  @param int k               The amount of positions to shift each letter.
     *  @return String ciphertext  The encrypted plaintext.
-    *
     */
    public static String encrypt(String plaintext, int k) {
       StringBuilder ciphertext = new StringBuilder();
       for(char c : plaintext.toCharArray()) {
          if(Character.isUpperCase(c)) {
             // zero-indexing uppercase characters: 
-            char shifted = (char) (((c - 'A' + k) % 26) + 'A');
+            char shifted = (char)(((c - 'A' + k) % 26) + 'A');
             ciphertext.append(shifted);
          }
          else if(Character.isLowerCase(c)) {
             // zero-indexing lowercase characters:
-            char shifted = (char) (((c - 'a' + k) % 26) + 'a');
+            char shifted = (char)(((c - 'a' + k) % 26) + 'a');
             ciphertext.append(shifted);
          }
          else
@@ -49,12 +48,12 @@ public class CaesarCipher {
       for(char c : ciphertext.toCharArray()) {
          if(Character.isUpperCase(c)) {
             // zero-indexing uppercase characters: 
-            char shifted = (char) (((c - 'A' - k) % 26) + 'A');
+            char shifted = (char)(((c - 'A' - k) % 26) + 'A');
             plaintext.append(shifted);
          }
          else if(Character.isLowerCase(c)) {
             // zero-indexing lowercase characters:
-            char shifted = (char) (((c - 'a' - k) % 26) + 'a');
+            char shifted = (char)(((c - 'a' - k) % 26) + 'a');
             plaintext.append(shifted);
          }
          else
@@ -62,11 +61,5 @@ public class CaesarCipher {
             plaintext.append(c);
       }
       return plaintext.toString();
-   }
-   
-   /** test */
-   public static void main(String[] args) {
-      System.out.println(encrypt("Attack at dawn!", 2));
-      System.out.println(decrypt(encrypt("Attack at dawn!", 2), 2));
    }
 }
