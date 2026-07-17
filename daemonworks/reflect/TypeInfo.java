@@ -1,4 +1,4 @@
-package daemonworks.util;
+package daemonworks.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -8,8 +8,11 @@ import java.lang.reflect.Modifier;
  *   - Replace deprecated Class.newInstance() use in 
  *     printClassHierarchy() with reflection
  *
+ *  @author Simon Norris
+ *  @version 1.0
+ *
  */
-class TypeInfo {
+public class TypeInfo {
    /** A utility method that takes an object and recursively
     *  prints all the classes in that object's hierarchy.
     *
@@ -53,6 +56,7 @@ class TypeInfo {
                   Modifier.toString(m.getModifiers()));
          }
          // DEPRECATED (TO-DO: Fix with reflection)
+         // **(use Class.getConstructors())
          try {
             printClassHierarchy(sup.newInstance(), fieldsFlag, methodsFlag);
          } catch(InstantiationException e) {
